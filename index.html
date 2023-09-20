@@ -1,0 +1,206 @@
+<html>
+ <head> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <title>网页制作</title> 
+  <script src="js/jq.js"></script> 
+  <script>
+      //登录注册功能
+      
+      //定义账号密码 null表示空的意思，后面可以根据自己去设定
+      let user = null
+      let pass = null
+      
+      //菜单页
+      caidan()
+      function caidan(){
+          //输入框 输入1注册账号，输入2登录账号
+          let is = prompt("请选择:\n1.注册\n2.登录")
+          if(is == 1){
+            //注册账号功能
+            zhuce()
+            
+            }
+          if(is == 2){
+            //登录账号功能
+            denglu()
+            
+            }
+      }						
+      
+      //登录功能
+      function denglu(){
+        //判断输入的账号密码是否正确
+        
+        let inUser = prompt("请输入账号:")
+        let inPass = prompt("请输入密码:")
+        
+        //如果输入的账号等于注册的账号，并且输入的密码等于注册密码
+        //那么就登录成功
+        //&&并且的意思
+        if(inUser == user && inPass == pass){
+        
+          alert("登录成功，欢迎"+user);
+        }else{
+          //否则重新输入
+          alert("账号或密码错误，请你重新输入")
+          denglu()
+        }
+      }
+    
+      //注册功能
+      function zhuce(){
+        user = prompt("请输入你要注册的账号:")
+        pass = prompt("请输入密码:")
+        
+        alert("你的账号为:"+user+"你的密码为:"+pass);
+        //注册完成再次回到菜单
+        caidan()
+      }
+  
+  </script> 
+  <style>
+  
+      *{
+        margin:0;
+        padding:0;
+        
+        }
+  
+  
+    body{
+      
+      background-color:rgb(51,51,51);
+      
+      
+      }
+      .tou{
+        
+        color:white;
+        font-size:40px;
+        text-align:center;
+        text-shadow:2px 9px 8px rgba(0.255,255,0.5);
+        
+        }
+      .daohanglan{
+          color:white;
+          display:flex;
+          justify-content: space-around;
+          border-top:1px solid white;
+          border-left:1px solid white;
+          padding:5px 5px;
+          box-shadow:2px 5px 5px black;
+        }
+      .daohanglan div{
+          background-color:red;
+          padding:5px 10px;
+        
+        }
+      .wenzhang{
+        color:yellow;
+        text-align:center;
+        background-color:rgb(102,102,102);
+        width:90%;
+        height:1000px;
+        margin:0 auto;
+        }
+      .wenzhang p{
+        color:white;
+        text-align:left;
+        text-indent:2em;
+        }
+  
+  </style> 
+ </head> 
+ <body id="v1"> 
+  <div id="v2" class="tou">
+    网页设计 
+  </div> 
+  <div id="v3" class="daohanglan"> 
+   <div id="v4">
+     首页 
+   </div> 
+   <div id="v5">
+     关于 
+   </div> 
+   <div id="v6">
+     文章 
+   </div> 
+   <div id="v7">
+     友链 
+   </div> 
+  </div> 
+  <div id="v8" class="wenzhang"> 
+   <h1 id="v9">标题</h1> 
+   <h5 id="v10">作者:玖璃</h5> 
+   <p id="v11">可以在里面写你想写的内容</p > 
+  </div> 
+  
+ </body>
+</html>      背景颜色:rgb(51,51,51);
+      
+      
+      }
+      .tou{
+        
+        color:white;
+        font-size:40px;
+        文本对立:中心;
+        文本阴影:2PX 9PX 8PX RGBA(0.255,255,0.5);
+        
+        }
+   1. 道汉兰   {
+          颜色:白色;
+          显示器:柔性;
+            正当内容 :     
+          边界顶部:1Px 固体 白色;
+          边界左侧:1Px 固体 白色;
+          羽绒服:5Px 5Px;
+          盒子阴影:2Px 5Px 5Px 黑色;
+        }
+       道港兰分区       {
+          背景颜色:红色;
+          羽绒服:5Px 10Px;
+        
+        }
+ 文章 {{
+        颜色:黄色;颜色:黄色      ;        颜色:黄色;
+        文本对立:中心;文本对立:中心      ;        文本对立:中心;
+        背景颜色:RGB(102,102,102);背景颜色:RGB(102,102,102)          ;            背景颜色:RGB(102,102,102);
+        宽度:90%;宽度:90%         ;           宽度:90%;
+        高度:1000Px;高度:1000Px          ;            高度:1000Px;
+        保证金:0 汽车;保证金:0 汽车          ;            保证金:0 汽车;
+        }} }
+                        文章P                       { {
+        颜色:白色;颜色:白色        ;          颜色:白色;
+        文本对立:左;文本对立:左      ;        文本对立:左;
+        文本缩进:2EM;文本缩进:2EM    ;      文本缩进:2EM;
+        }} }
+  
+                         </风格>                        
+ </head> 
+                    <身体ID=                 
+ <divid= "V2" 等级="头">"V2" 等级="头">
+                       网页设计                    
+ </div> 
+ <DIVID= "V3"             等级=“道汉兰”>              "V3"            等级=“道汉兰”>            
+ <DIVID= "V4">"V4">
+                       首页                   
+ </Div> 
+ <DIVID= "V5">
+                       关于                   
+ </Div> 
+ <DIVID= "V6">"V6">
+ 文章 
+ </Div> 
+ <DIVID= 
+ 友链 
+ </Div> 
+ </Div> 
+ <DIVID= 
+ <H1 Id= 
+ <H5ID= 
+ <PID= "V11"     >可以在里面写你想写的内容</P >        "V11"     >可以在里面写你想写的内容</P >       
+ </Div> 
+  
+ </身体>
+</HTML>
